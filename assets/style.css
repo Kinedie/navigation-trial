@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+header {
+    background-color: #7001e3;
+    height: 120px;
+    color: #fff;
+}
+
+.navbar {
+    max-width: 1680px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.7vh;
+}
+
+
+.nav-logo {
+    padding-top: 1vh;
+}
+
+/*  BUTTONS  */
+.open-btn, .close-btn {
+    color: white;
+}
+.open-btn {
+    font-size: 52px;
+}
+.open-btn:hover {
+    color: #ff5a01;
+    cursor: pointer;
+}
+.close-btn {
+    font-size: 70px;
+}
+.close-btn:hover {
+    color: #ff5a01;
+    cursor: pointer;
+}
+
+
+/* THE SIDE NAVIGATION MENU */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    background-color: #7001e3;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+  
+.menu-list {
+    padding-top: 60px;
+    list-style: none;
+    text-align:center;
+}
+
+/* The navigation menu links */
+.menu-list a {
+    text-decoration: none;
+    font-size: 100px;
+    color: white;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color:#ff5a01;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
